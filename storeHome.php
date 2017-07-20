@@ -1,8 +1,22 @@
 <!DOCTYPE html>
-<?php require_once 'itemPrinter.php' ?>
+<?php
+require_once 'itemPrinter.php';
+require 'databaseKeys.php';
+
+try{
+	$dbh = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
+
+    $sth = $dbh->prepare("SELECT * FROM items");
+    $sth->execute();
+    $items = $sth->fetchAll();
+}
+catch(PDOException $e){
+	echo "Error";
+}
+?>
 <html>
 <head>
-	<title>spicee teez for depraved teenz</title>
+	<title>Home</title>
 </head>
 <body>
 <!-- 
@@ -18,18 +32,27 @@ ok im guessing theres gonna b some sort of login were gonna have 2 do where you 
 best friend <333: storeStyle.css
 
 -->
-
+<table>
+<?php
+	$id = 1;
+	for($row = 0; $row < count($items)/3; $row++){
+		echo "<tr>";
+		for($col = 0; $col < 3; col++){
+			echo "<a href=\"item.php?itemID={$id}\">
+				<td>newItem($items[$id]['image'], $items[$id]['name'], $items[$id]['price'])</td>
+				</a>";
+			$id++;
+		}
+		echo "</tr>"
+	}
+?>
+</table>
 <main>
 
 <?php 
 echo printHead();
 // ok im too lazy to use shift to make a php tag so ill just write this here,, use newItem five million times
 ?>
-	<nav>
-		<a href="">tees</a>
-		<a href="">accessories</a>
-		<a href="">about us</a>
-	</nav>
 
 
 </main>
