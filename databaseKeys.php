@@ -1,5 +1,6 @@
 <?php
-	define('DB_DSN', 'mysql:host=localhost;dbname=rastley'); // change dbname to your username
-	define('DB_USER', 'rastley');
-	define('DB_PASSWORD', 'WIZARDS RULE');
+define ('DB_DSN', 'mysql:host=localhost;dbname=azheng');
+define ('DB_USER', 'azheng');
+define ('DB_PASSWORD', 'az57093');
+
 ?>
