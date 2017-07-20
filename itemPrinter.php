@@ -1,5 +1,5 @@
 <?php
- require_once 'databaseKeys.php'
+ require_once 'databaseKeys.php';
 
 
 function printHead() {
