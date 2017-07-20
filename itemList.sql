@@ -22,14 +22,13 @@ CREATE TABLE IF NOT EXISTS `items` (
 INSERT INTO `items` 
 	(`name`, `image`, `price`, `desc`, `type`)
 VALUES
-	('Spice Tee', '', '10.99', 'nice n spicey', 'tee'),
-	('Catch these hands Tee', '', '9.99', 'sum handz', 'tee'),
-	('Flee Tee', '', '9.99', 'flee on ur tee', 'tee'),
-	('Catch these hands pin', '', '2.99', 'small hands', 'pin'),
-	('Eggo pin', '', '2.99', 'now u never hav 2 leggo ur eggo', 'pin'),
-	('Bread tee', '', '10.99', 'pure n soft', 'tee'),
-	('Sleepy tee', '', '9.99', 'get sum zzzs in this tee', 'tee'); 
-
+	('Spice Tee', 'images/handsTee.png', '10.99', 'nice n spicey', 'tee'),
+	('Catch these hands Tee', 'images/handsTee.png', '9.99', 'sum handz', 'tee'),
+	('Flee Tee', 'images/handsTee.png', '9.99', 'flee on ur tee', 'tee'),
+	('Catch these hands pin', 'images/handsTee.png', '2.99', 'small hands', 'pin'),
+	('Eggo pin', 'images/handsTee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'pin'),
+	('Bread tee', 'images/handsTee.png', '10.99', 'pure n soft', 'tee'),
+	('Sleepy tee', 'images/handsTee.png', '9.99', 'get sum zzzs in this tee', 'tee'); 
 
 CREATE TABLE IF NOT EXISTS `customers` (
   `ID` int NOT NULL AUTO_INCREMENT,
