@@ -25,10 +25,9 @@ echo printHead();
 		?>
 		</select>
 		<input type="number" name="zip" class="sBoxes" placeholder="Zip Code" required>
-	</div>
 	<!--Credit Card-->
-	<h3>Credit Card: <h3>
-		<input type="number" name="credit" placeholder ="Credit Card Number" maxlength="16" required>
+	<h3>Credit Card: </h3>
+		<input type="number" name="credit" placeholder ="Credit Card Number" required>
 	<!--Confirm Purchase-->
 		<input type="submit" name="button" value="Confirm Purchase" id="submit">
 </form>
