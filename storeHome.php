@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 require_once 'itemPrinter.php';
 require 'databaseKeys.php';
@@ -6,14 +5,25 @@ require 'databaseKeys.php';
 try{
 	$dbh = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
 
-    $sth = $dbh->prepare("SELECT * FROM items");
-    $sth->execute();
-    $items = $sth->fetchAll();
+	if (!isset($_GET['category'])) {
+		$sth = $dbh->prepare("SELECT * FROM items");
+	    $sth->execute();
+	    $items = $sth->fetchAll();
+	}
+	else{
+		$sth = $dbh->prepare("SELECT * FROM items WHERE type=:type");
+	    $sth->bindValue(':type', $_GET['category'])
+	    $sth->execute();
+	    $items = $sth->fetchAll();
+	}
+
 }
 catch(PDOException $e){
 	echo "Error";
 }
 ?>
+
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Home</title>
@@ -32,8 +42,12 @@ ok im guessing theres gonna b some sort of login were gonna have 2 do where you 
 best friend <333: storeStyle.css
 
 -->
-<table>
-<?php
+<main>
+
+<?php 
+echo printHead();
+
+echo "<table>"
 	$id = 1;
 	for($row = 0; $row < count($items)/3; $row++){
 		echo "<tr>";
@@ -45,13 +59,7 @@ best friend <333: storeStyle.css
 		}
 		echo "</tr>"
 	}
-?>
-</table>
-<main>
-
-<?php 
-echo printHead();
-// ok im too lazy to use shift to make a php tag so ill just write this here,, use newItem five million times
+echo "</table>"
 ?>
 
 
