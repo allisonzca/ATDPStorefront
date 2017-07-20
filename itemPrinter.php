@@ -4,10 +4,10 @@
 
 function printHead() {
 	// ok theres sum shirt here thats kinda a header but the position is fixed n i don't if it should b div or span or whatever
-	echo "<h1>Spicey Teez for Depraved Teenz</h1>";
+	echo "<h1>A Tee D P</h1>";
 	echo "<nav> 
-		<a href=\"\">Tees</a>
-		<a href=\"\">Accessories</a>
+		<a href=\"tees.php\">Tees</a>
+		<a href=\"pins.php\">Pins</a>
 		<a href=\"\">idk</a>
 		<a href=\"\">idk</a>
 		  </nav>";
@@ -28,7 +28,7 @@ function itemFrame($itemIMG_url, $itemDesc) {
 */
 }
 
-function newItem($itemIMG_url, $itemName, $itemPrice, $itemDesc) {
+function newItem($itemIMG_url, $itemName, $itemPrice) {
 	/* hi ok so this is gonna b complicated af so ill try to explain it hopefully
 	0. so insert those arguments, just make the prices an integer who tf cares
 	1. adds a new item that has a int price called $itemPrice, an string image url called $itemIMG_url, a string name called $itemName, and a string desc in $itemDesc in itemlist table in itemlist.sql
@@ -36,7 +36,9 @@ function newItem($itemIMG_url, $itemName, $itemPrice, $itemDesc) {
 	3. ok im pretty sure this has something to do with the comic thing we did so just try to copy that with the id=whateveridthatitemis shit so each item has its own page
 	4. ok now ur gonna put a function in this function, aka itemFrame(), n for the arguments ur gonna stick $itemIMG_url in it and itemDesc
 	*/
-
+	echo "<img src=\"{$itemIMG_url}\" class=\"item-img\">";
+	echo "<p class=\"item-name\">{$itemName}</p>";
+	echo "<p class=\"item-price\">{$itemPrice}</p>";
 }
 
 function dispInfo () {
