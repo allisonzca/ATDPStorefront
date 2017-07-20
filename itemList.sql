@@ -28,7 +28,10 @@ VALUES
 	('Catch these hands pin', 'images/handsTee.png', '2.99', 'small hands', 'pin'),
 	('Eggo pin', 'images/handsTee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'pin'),
 	('Bread tee', 'images/handsTee.png', '10.99', 'pure n soft', 'tee'),
-	('Sleepy tee', 'images/handsTee.png', '9.99', 'get sum zzzs in this tee', 'tee'); 
+	('Sleepy tee', 'images/handsTee.png', '9.99', 'get sum zzzs in this tee', 'tee')
+	('Sleepy slippers', 'images/handsTee.png', '19.99', 'sleep in ur shoes', 'shoes');
+	('collegeboard shoes', 'images/handsTee.png', '24.99', 'collegeboard logo is on the botttom of this shoe, no u can walk all over them', 'shoes'); 
+
 
 CREATE TABLE IF NOT EXISTS `customers` (
   `ID` int NOT NULL AUTO_INCREMENT,
@@ -53,3 +56,5 @@ CREATE TABLE IF NOT EXISTS `cart` (
 	`item_id` int,
 	PRIMARY KEY (`ID`)
 );
+
+
