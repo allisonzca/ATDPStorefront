@@ -28,10 +28,16 @@
 	$name = $item['name'];
 	$price = $item['price'];
 	$description = $item['description'];
+	$id = $item['id'];
 	echo "<h1 class=\"item-page-name\">{$name}</h1>";
 	echo "<img href=\"{$image}\" class=\"item-page-image\">";
 	echo "<h3>{$price}</h3>";
 	echo "<p>{$description}</p>";
 ?>
+
+	<form action="cart.php" method="post">
+		<input type="hidden" name="item" value={$id}>
+		<input type="submit" name="Add to cart">
+	</form>
 </body>
 </html>
