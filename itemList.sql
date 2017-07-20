@@ -22,15 +22,16 @@ CREATE TABLE IF NOT EXISTS `items` (
 INSERT INTO `items` 
 	(`name`, `image`, `price`, `desc`, `type`)
 VALUES
-	('Spice Tee', 'images/handsTee.png', '10.99', 'nice n spicey', 'tee'),
-	('Catch these hands Tee', 'images/handsTee.png', '9.99', 'sum handz', 'tee'),
-	('Flee Tee', 'images/handsTee.png', '9.99', 'flee on ur tee', 'tee'),
-	('Catch these hands pin', 'images/handsTee.png', '2.99', 'small hands', 'pin'),
-	('Eggo pin', 'images/handsTee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'pin'),
-	('Bread tee', 'images/handsTee.png', '10.99', 'pure n soft', 'tee'),
-	('Sleepy tee', 'images/handsTee.png', '9.99', 'get sum zzzs in this tee', 'tee')
-	('Sleepy slippers', 'images/handsTee.png', '19.99', 'sleep in ur shoes', 'shoes');
-	('collegeboard shoes', 'images/handsTee.png', '24.99', 'collegeboard logo is on the botttom of this shoe, no u can walk all over them', 'shoes'); 
+	('anxieTee', 'images/handsTee.png', '10.99', 'starter pack', 'help'),
+	('Catch these hands Tee', 'images/handsTee.png', '9.99', 'sum handz', 'help'),
+	('Flee Tee', 'images/handsTee.png', '9.99', 'flee on ur tee', 'help'),
+	('Pupper Tee', 'images/handsTee.png', '2.99', 'precious floof on ur abdomen', 'wholesome'),
+	('Eggo Tee', 'images/handsTee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'wholesome'),
+	('Birb Tee', 'images/handsTee.png', '10.99', 'singz sweeter than u', 'wholesome'),
+	('Acorn tee', 'images/handsTee.png', '9.99', 'nut', 'collegeboard')
+	('Good score Tee', 'images/handsTee.png', '19.99', 'is only a 5', 'collegeboard');
+	('Josefin Slab Tee', 'images/handsTee.png', '24.99', 'collegeboard\'s fave font', 'collegeboard'); 
+
 
 
 CREATE TABLE IF NOT EXISTS `customers` (
