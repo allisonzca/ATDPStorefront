@@ -12,7 +12,7 @@ try{
 	}
 	else{
 		$sth = $dbh->prepare("SELECT * FROM items WHERE type=:type");
-	    $sth->bindValue(':type', $_GET['category'])
+	    $sth->bindValue(':type', $_GET['category']);
 	    $sth->execute();
 	    $items = $sth->fetchAll();
 	}
@@ -47,19 +47,19 @@ best friend <333: storeStyle.css
 <?php 
 echo printHead();
 
-echo "<table>"
+echo "<table>";
 	$id = 1;
 	for($row = 0; $row < count($items)/3; $row++){
 		echo "<tr>";
-		for($col = 0; $col < 3; col++){
+		for($col = 0; $col < 3; $col++){
 			echo "<a href=\"item.php?itemID={$id}\">
 				<td>newItem($items[$id]['image'], $items[$id]['name'], $items[$id]['price'])</td>
 				</a>";
 			$id++;
 		}
-		echo "</tr>"
+		echo "</tr>";
 	}
-echo "</table>"
+echo "</table>";
 ?>
 
 
