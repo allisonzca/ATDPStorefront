@@ -1,6 +1,7 @@
 <?php
 require_once 'itemPrinter.php';
-require 'databaseKeys.php';
+require_once 'databaseKeys.php';
+date_default_timezone_set('America/Los_Angeles');
 
 try{
 	$dbh = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
