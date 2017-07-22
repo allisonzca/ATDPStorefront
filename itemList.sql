@@ -22,15 +22,15 @@ CREATE TABLE IF NOT EXISTS `items` (
 INSERT INTO `items` 
 	(`name`, `image`, `price`, `desc`, `type`)
 VALUES
-	('anxieTee', 'images/anxietee.png', '10.99', 'starter pack', 'help'),
-	('Catch these hands Tee', 'images/handsTee.png', '9.99', 'sum handz', 'help'),
-	('Flee Tee', 'fleetee.png', '9.99', 'flee on ur tee', 'help'),
-	('Pupper Tee', 'images/puppertee.png', '2.99', 'precious floof on ur abdomen', 'wholesome'),
-	('Eggo Tee', 'images/handsTee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'wholesome'),
-	('Birb Tee', 'images/handsTee.png', '10.99', 'singz sweeter than u', 'wholesome'),
-	('Acorn tee', 'images/handsTee.png', '9.99', 'nut', 'collegeboard'),
-	('Good score Tee', 'images/handsTee.png', '19.99', 'is only a 5', 'collegeboard'),
-	('Josefin Slab Tee', 'images/handsTee.png', '24.99', 'collegeboard\'s fave font', 'collegeboard');
+	('anxieTee', 'designs/anxietee.png', '10.99', 'starter pack', 'help'),
+	('Catch these hands Tee', 'designs/handsTee.png', '9.99', 'sum handz', 'help'),
+	('Flee Tee', 'designs/fleetee.png', '9.99', 'flee on ur tee', 'help'),
+	('Pupper Tee', 'designs/puppertee.png', '2.99', 'precious floof on ur abdomen', 'wholesome'),
+	('Eggo Tee', 'designs/eggotee.png', '2.99', 'now u never hav 2 leggo ur eggo', 'wholesome'),
+	('Birb Tee', 'designs/birbtee.png', '10.99', 'singz sweeter than u', 'wholesome'),
+	('Acorn tee', 'designs/acorntee.png', '9.99', 'nut', 'collegeboard'),
+	('Good score Tee', 'designs/scoretee.png', '19.99', 'is only a 5', 'collegeboard'),
+	('Josefin Slab Tee', 'designs/fonttee.png', '24.99', 'collegeboard\'s fave font', 'collegeboard');
 
 CREATE TABLE IF NOT EXISTS `customers` (
   `id` int NOT NULL AUTO_INCREMENT,
